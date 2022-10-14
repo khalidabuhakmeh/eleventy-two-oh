@@ -1,0 +1,17 @@
+---
+layout: layout.liquid
+---
+
+<h1> {{ title }} </h1>
+
+<p>I want to say something right now</p>
+
+<ul class="nes-list is-disc">
+{% for possum in possums %}
+    <li>
+        <a href="{% possum_link possum.slug %}">
+            {{ possum.name }}
+        </a>
+    </li>
+{% endfor %}
+</ul>

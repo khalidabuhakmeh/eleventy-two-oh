@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Fluffy",
+    "age": 2,
+    "slug": "fluffy",
+    "src" : "https://images.unsplash.com/photo-1577879673880-1f9c0e75b250?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
+  },
+  {
+    "name": "Snugglepants",
+    "age": 5,
+    "slug" : "snugglepants",
+    "src" : "https://images.unsplash.com/photo-1577879674193-f9340fd47115?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
+  },
+  {
+    "name": "Lord Featherbottom",
+    "age": 4,
+    "slug" : "lord-featherbottom",
+    "src" : "https://images.unsplash.com/photo-1602157339949-d229cb6d223c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
+  },
+  {
+    "name": "Pennywise",
+    "age": 9,
+    "slug" : "pennywise",
+    "src" : "https://images.unsplash.com/photo-1631739408670-38319df9c5c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2367&q=80"
+  }
+]

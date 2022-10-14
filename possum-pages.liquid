@@ -1,0 +1,34 @@
+---
+layout: layout.liquid
+pagination:
+    data: possums
+    size: 1
+    alias: possum
+permalink: "{% possum_link possum.slug %}"
+---
+
+<div class="nes-container with-title">
+    <h1 class="title">
+        {{ possum.name }}
+    </h1>
+    <img class="img" src="{{ possum.src }}" alt="{{ possum.name }} which is a possum" width="100%" />
+    <div class="nes-container is-rounded is-dark">
+        <p> {{ possum.name }} is {{ possum.age }} years old.</p>
+    </div>
+</div>
+
+{% assign next = possums | next: possum %}
+{% assign previous = possums | previous: possum %}
+
+<div class="pagination">
+    <div class="previous">
+    {% if previous %}
+    <a class="nes-btn is-primary" href="{% possum_link previous.slug %}"><< {{ previous.name }}</a>
+    {% endif %}
+    </div>
+    <div class="next">
+    {% if next %}
+    <a class="nes-btn is-success" href="{% possum_link next.slug %}">{{ next.name }} >></a>
+    {% endif %}
+    </div>
+</div>
