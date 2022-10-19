@@ -1,5 +1,7 @@
 ---
 title: Khalid's Super Possum Site
+webc:
+    components: "./webc/*.webc"
 ---
 <html lang="en">
 <head>
@@ -9,6 +11,7 @@ title: Khalid's Super Possum Site
     <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet"/>
     <link href="/css/style.css" rel="stylesheet"/>
     <title>{{ title }}</title>
+    <style>{{ page.url | webcGetCss }}</style>
 </head>
 
 <header class="sticky">
@@ -25,5 +28,6 @@ title: Khalid's Super Possum Site
 <main class="container main-content">
     {{ content }}
 </main>
+<script type="module">{{ page.url |  webcGetJs }}</script>
 </body>
 </html>

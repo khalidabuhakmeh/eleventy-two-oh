@@ -1,0 +1,16 @@
+<button type="button" class="nes-btn">
+  <i class="nes-icon twitter"></i>
+  Share Tweet
+</button>
+
+<script>
+window.customElements.define("twitter-share", class extends HTMLElement {
+  connectedCallback() {
+    let btn = this.querySelector(':scope button');
+    btn.addEventListener('click', () => {
+      alert('sharing drama on Twitter!')
+    })
+  }
+})
+</script>
+
