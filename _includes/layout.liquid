@@ -1,7 +1,5 @@
 ---
 title: Khalid's Super Possum Site
-webc:
-    components: "./webc/*.webc"
 ---
 <html lang="en">
 <head>
@@ -29,5 +27,6 @@ webc:
     {{ content }}
 </main>
 <script type="module">{{ page.url |  webcGetJs }}</script>
+<script type="module" src="/js/site.ts"></script>
 </body>
 </html>

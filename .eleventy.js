@@ -1,15 +1,17 @@
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite")
 
 module.exports = function(eleventyConfig) {
+
+    eleventyConfig.addPlugin(EleventyVitePlugin);
 
     eleventyConfig.addPlugin(pluginWebc, {
         components: "_includes/webc/*.webc"
     });
     eleventyConfig.addPlugin(EleventyRenderPlugin);
 
-    eleventyConfig.addPassthroughCopy("css" );
-    eleventyConfig.addPassthroughCopy("js" );
+    eleventyConfig.addPassthroughCopy({ "public" : "/" });
 
     eleventyConfig.addShortcode("possum_link", function(slug) {
         return `/possums/${slug}/`

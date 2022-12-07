@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npx @11ty/eleventy --serve --watch",
     "build": "npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --serve"
+    "clean": "rm -rf _site && rm -rf .11ty-vite"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,9 @@
     "@11ty/eleventy": "^2.0.0-canary.16"
   },
   "dependencies": {
-    "@11ty/eleventy-plugin-webc": "^0.5.1"
+    "@11ty/eleventy-plugin-webc": "^0.5.1",
+    "@11ty/eleventy-plugin-vite": "^2.0.0-canary.2",
+    "sass": "^1.56.1",
+    "typescript": "^4.9.3"
   }
 }

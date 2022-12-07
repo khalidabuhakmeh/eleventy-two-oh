@@ -23,12 +23,12 @@ permalink: "{% possum_link possum.slug %}"
 <div class="pagination">
     <div class="previous">
     {% if previous %}
-    <a class="nes-btn is-primary" href="{% possum_link previous.slug %}"><< {{ previous.name }}</a>
+    <a class="nes-btn is-primary" href="{% possum_link previous.slug %}">&lt;&lt; {{ previous.name }}</a>
     {% endif %}
     </div>
     <div class="next">
     {% if next %}
-    <a class="nes-btn is-success" href="{% possum_link next.slug %}">{{ next.name }} >></a>
+    <a class="nes-btn is-success" href="{% possum_link next.slug %}">{{ next.name }} &gt;&gt;</a>
     {% endif %}
     </div>
 </div>
