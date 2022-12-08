@@ -16,7 +16,7 @@ window.customElements.define("twitter-share", class extends HTMLElement {
 
 <style lang="css" webc:scoped>
 :host button {
-    color: blue;
+    color: firebrick;
 }
 </style>
 

@@ -24,6 +24,12 @@ title: Khalid's Super Possum Site
 
 <body id="nescss">
 <main class="container main-content">
+
+    {% renderTemplate "webc" %}
+    <twitter-share></twitter-share>
+    {% endrenderTemplate %}
+
+
     {{ content }}
 </main>
 <script type="module">{{ page.url |  webcGetJs }}</script>
